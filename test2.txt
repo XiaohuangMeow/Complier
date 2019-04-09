@@ -1,0 +1,17 @@
+int a=100;
+float b=0.1;
+while (a<110){
+a++;
+}
+String s="1dvfg;
+if (a>50)
+{
+float a=1.23.5;
+//
+b=0.5;
+}
+/***hhhhh***
+do{
+b=1.6;
+dasdsad*/
+}while (b>0.5);
