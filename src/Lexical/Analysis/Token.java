@@ -2,6 +2,7 @@ package Lexical.Analysis;
 
 import Lexical.DFA.DigitDFA;
 import Lexical.DFA.WordDFA;
+import Lexical.Tool.SymbolTable;
 
 public class Token {
 
@@ -19,8 +20,9 @@ public class Token {
         }
         //标识符
         else{
-            String output=s+"  "+"< "+0+" , "+s+" >"+"   Line:"+lineNumber;
-            Main.WriteList.add("< "+0+" , "+s+" >");
+            int pos=SymbolTable.addSymbolTable(s);
+            String output=s+"  "+"< "+0+" , "+pos+" >"+"   Line:"+lineNumber;
+            Main.WriteList.add("< "+0+" , "+pos+" >");
             System.out.println(output);
         }
     }

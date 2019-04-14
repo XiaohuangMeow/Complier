@@ -30,24 +30,14 @@ public class Tool {
     }
 
     public static boolean isdigit(char x){
-        if (x<='9'&&x>='0'){
-            return true;
-        }
-        return false;
+        return x<='9'&&x>='0';
     }
+
     public static boolean isletter(char x){
-        if (x<='z'&&x>='a'||x<='Z'&&x>='A'){
-            return true;
-        }
-        return false;
+        return x<='z'&&x>='a'||x<='Z'&&x>='A';
     }
 
-    public static boolean isunderline(char x){
-        if (x=='_'){
-            return true;
-        }
-        return false;
+    public static boolean isunderline(char x) {
+        return x == '_';
     }
-
-
 }

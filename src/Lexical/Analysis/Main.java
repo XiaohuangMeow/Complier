@@ -1,5 +1,6 @@
 package Lexical.Analysis;
 
+import Lexical.Tool.SymbolTable;
 import Lexical.Tool.Tool;
 
 import java.io.IOException;
@@ -59,5 +60,6 @@ public class Main {
             System.err.println("注解未完");
         }
         Tool.WriteFile("result.txt",WriteList);
+        SymbolTable.WriteFile("SymbolTable.txt");
     }
 }
