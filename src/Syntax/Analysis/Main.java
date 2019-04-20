@@ -16,9 +16,10 @@ public class Main {
     public static Set<String> terminals=new HashSet<>();
     public static Set<String> nonterminals=new HashSet<>();
     public static Map<String,Set<String>> First=new HashMap<>();
+    public static List<String> outputs=new ArrayList<>();
 
     public static void GenerateProduction() throws IOException {
-        List<String> lines= Method.ReadFile("Grammar2.txt");
+        List<String> lines= Method.ReadFile("Grammar.txt");
         for (int i = 0; i < lines.size(); i++) {
             String line=lines.get(i);
             if (line.equals("")||line.charAt(0)=='#'){
@@ -205,70 +206,17 @@ public class Main {
 //        System.out.println(States.size());
         for (int k=0;k<States.size();k++){
             Closure closure=States.get(k);
-//            System.out.println();
-//            System.out.println(k+"  "+closure);
-//            for (String terminal:terminals) {
-//                //action_table
-//                for (Item item : closure.getItems()) {
-//                    String rightFirst=item.getRFirst();
-//                    //reduce
-//                    if (rightFirst==null){
-//                        String left=item.getLeft();
-//                        String right=item.getRight();
-//                        for (int i=0;i<productions.size();i++){
-//                            Production production=productions.get(i);
-//                            //遇到终结符为展望符
-//                            if (production.getLeft().equals(left) && production.getRight().equals(right)&&terminal.equals(item.getLookahead())) {
-//                                action.add(k,item.getLookahead(),production);
-//                                System.out.println("!!  "+k+"  "+item+"  "+action.nextProduction(k,item.getLookahead()));
-//                                break;
-//                            }
-//                        }
-//                        continue;
-//                    }
-//                    else{
-//                        Closure next=null;
-//                        int j=States.indexOf(next);
-//                        action.add(k,terminal,j);
-//                        System.out.println("action:"+k+"  "+rightFirst+"  "+action.nextState(k,rightFirst));
-//                    }
-//                }
-//            }
-
-//            for (String nonterminal:nonterminals) {
-//                Closure next = Goto(States, closure, nonterminal);
-//                if (next == null) {
-//                    continue;
-//                }
-//                for (Item item : closure.getItems()) {
-//                    String rightFirst=item.getRFirst();
-//                    if (rightFirst!=null&&rightFirst.equals(nonterminal)) {
-//                        int j = States.indexOf(next);
-//                        gotoState.add(k, rightFirst, j);
-//                        System.out.println("goto:" + k + "  " + rightFirst + "  " + gotoState.nextState(k, rightFirst));
-//                    }
-//                }
-//            }
                 //action_goto
-            for (Item item:closure.getItems()){
-                String rightFirst=item.getRFirst();
-                Closure next=Goto(States,closure,rightFirst);
-//                System.out.println();
-//                System.out.println(item);
-//                System.out.println(next);
-                //reduce
-//                if (k==4){
-//                    System.out.println("aaa");
-//                    System.out.println(item);
-//                    System.out.println("aaa");
-//                }
-                if (rightFirst==null){
-                    String left=item.getLeft();
-                    String right=item.getRight();
-                    for (int i=0;i<productions.size();i++){
-                        Production production=productions.get(i);
+            for (Item item:closure.getItems()) {
+                String rightFirst = item.getRFirst();
+                Closure next = Goto(States, closure, rightFirst);
+                if (rightFirst == null) {
+                    String left = item.getLeft();
+                    String right = item.getRight();
+                    for (int i = 0; i < productions.size(); i++) {
+                        Production production = productions.get(i);
                         if (production.getLeft().equals(left) && production.getRight().equals(right)) {
-                            action.add(k,item.getLookahead(),production);
+                            action.add(k, item.getLookahead(), production);
 //                            System.out.println("!!  "+k+"  "+item+"  "+action.nextProduction(k,item.getLookahead()));
                             break;
                         }
@@ -276,29 +224,17 @@ public class Main {
                     continue;
                 }
                 //action
-                else if (terminals.contains(rightFirst)&&next!=null){
-                    int j=States.indexOf(next);
-//                    if (action.jugde(k,rightFirst)!=0
-//                            &&action.nextState(k,rightFirst)!=j){
-//                        System.out.println("aaaaaaaaaaaaaaaaaaaa");
-//                    }
-                    action.add(k,rightFirst,j);
-//                    System.out.println("action:"+k+"  "+rightFirst+"  "+action.nextState(k,rightFirst));
+                else if (terminals.contains(rightFirst) && next != null) {
+                    int j = States.indexOf(next);
+                    action.add(k, rightFirst, j);
                 }
                 //goto
-                if (nonterminals.contains(rightFirst)&&next!=null){
-                    int j=States.indexOf(next);
-//                    if (action.jugde(k,rightFirst)!=0&&action.nextState(k,rightFirst)!=j){
-//                        System.out.println("aaaaaaaaaaaaaaaaaaaa");
-//                    }
-                    gotoState.add(k,rightFirst,j);
-//                    System.out.println("goto:"+k+"  "+rightFirst+"  "+gotoState.nextState(k,rightFirst));
+                if (nonterminals.contains(rightFirst) && next != null) {
+                    int j = States.indexOf(next);
+                    gotoState.add(k, rightFirst, j);
                 }
 
             }
-            //goto
-
-            //action_reduce
         }
 //        action.add(1,"#",-1);
         Production p=productions.get(0);
@@ -319,12 +255,7 @@ public class Main {
         Stack<Integer> StatusStack=new Stack<>();
         StatusStack.push(0);
         Stack<String> SymbolStack=new Stack<>();
-//        int x=0;
-
-
-
         while (true){
-//            System.out.println(x++);
             int nowState=StatusStack.peek();
             String input=tuples.get(read).getInput();
             Closure now=States.get(nowState);
@@ -332,20 +263,12 @@ public class Main {
             int judge=action.jugde(nowState,input);
             //移进
             if (judge==1){
-//                System.out.println(nowState+"   "+input);
-//                System.out.println(StatusStack);
-//                System.out.println(SymbolStack);
-
                 int next=action.nextState(nowState,input);
                 if (next==-1){
                     break;
                 }
                 StatusStack.push(next);
                 SymbolStack.push(input);
-
-//                System.out.println(StatusStack);
-//                System.out.println(SymbolStack);
-
                 read++;
             }
             //规约
@@ -356,110 +279,49 @@ public class Main {
                         break;
                     }
                 }
-
-//                System.out.println(StatusStack);
-//                System.out.println(SymbolStack);
-
                 //reduce
                 Production p=action.nextProduction(nowState,input);
+                String output=p+"  Line:"+tuples.get(read).getLine();
+                outputs.add(output);
+                System.out.println(p+"  Line:"+tuples.get(read).getLine());
                 int cnt=p.getRightList().size();
                 while (cnt-->0){
                     StatusStack.pop();
                     SymbolStack.pop();
                 }
                 SymbolStack.push(p.getLeft());
-
-//                System.out.println(StatusStack);
-//                System.out.println(SymbolStack);
-
                 //goto
                 int next=gotoState.nextState(StatusStack.peek(),SymbolStack.peek());
                 StatusStack.push(next);
-
-//                System.out.println(StatusStack);
-//                System.out.println(SymbolStack);
-
             }
             else if (judge==0){
 //                System.out.println("aaaaaaaaaaaa");
             }
-            //规约
-//            for (Item it:now.getItems()){
-//                if (it.isReduce()&&){
-//
-//                }
-//            }
-//
-//            //移进
-//            Closure nextStatus=Goto(States,now,input);
-//            int seq=States.indexOf(nextStatus);
-//            StatusStack.push(seq);
-//            SymbolStack.push(input);
         }
     }
 
     public static void main(String[] args) throws IOException {
         GenerateProduction();
-
-//        for (int i = 0; i < productions.size(); i++) {
-//            System.out.println(productions.get(i));
-//        }
-
         fillingTerminals();
-//        for (String t : terminals) {
-//            System.out.println(t);
-//        }
-//        System.out.println();
-//        for (String t : nonterminals) {
-//            System.out.println(t);
-//        }
-
-//        System.out.println("abcdefg");
         GenerateFirst();
-//        for (Map.Entry entry:First.entrySet()){
-//            System.out.println(entry.getKey()+" "+entry.getValue());
-//        }
-
         List<Closure> States=cluster();
-//        System.out.println(States.size());
-//        for (int i=0;i<States.size();i++){
-//            System.out.println(States.get(i));
-//        }
-
         ConstructLR1Table(States);
-
-
         Lexical.Analysis.Main.LexicalAnalysis();
         List<String> token=Lexical.Analysis.Main.WriteList;
-
-//        System.out.println(token);
-
         List<String> table= Method.ReadFile("src/lexical/table.txt");
 
         List<Tuple> tuples=new ArrayList<>();
         for (int i=0;i<token.size();i++){
             String[] arr=token.get(i).split(" ");
-//            System.out.println(token.get(i));
             tuples.add(new Tuple(table.get(Integer.valueOf(arr[1])),Integer.valueOf(arr[1]),arr[3],Integer.valueOf(arr[5])));
             System.out.println(tuples.get(i));
         }
 
         analysis(tuples,States);
-
-//        System.out.println(cluster());
-//        for (int i = 0; i < productions.size(); i++) {
-//            System.out.println(productions.get(i));
-//        }
-//        for (String t : terminals) {
-//            System.out.println(t);
-//        }
-//        System.out.println();
-//        for (String t : nonterminals) {
-//            System.out.println(t);
-//        }
-//        for (Map.Entry entry:First.entrySet()){
-//            System.out.println(entry.getKey()+" "+entry.getValue());
-//        }
-
+        Method.WriteFile("SyntaxResult.txt",outputs);
+        System.out.println("Action_Table");
+        action.write(States);
+        System.out.println("Goto_Table");
+        gotoState.write(States);
     }
 }

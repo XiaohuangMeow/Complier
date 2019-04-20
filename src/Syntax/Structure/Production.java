@@ -65,10 +65,10 @@ public class Production {
 
     @Override
     public String toString() {
-        return "Production{" +
-                "left='" + left + '\'' +
-                ", right='" + right + '\'' +
-                ", rightList=" + rightList +
-                '}';
+        String s=left+"->";
+        for (int i=0;i<rightList.size();i++){
+            s+=rightList.get(i)+" ";
+        }
+        return s;
     }
 }

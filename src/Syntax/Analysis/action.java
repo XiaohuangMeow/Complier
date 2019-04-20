@@ -1,8 +1,13 @@
 package Syntax.Analysis;
 
+import Syntax.Method.Method;
+import Syntax.Structure.Closure;
 import Syntax.Structure.Production;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 class ac{
@@ -96,5 +101,49 @@ public class action {
             return 1;
         }
         return 0;
+    }
+
+    public static void write(List<Closure> States) throws IOException {
+        List<String> outputs=new ArrayList<>();
+        String output="";
+        for (String terminal:Main.terminals){
+            output+="\t\t"+terminal;
+//            System.out.print(output);
+        }
+        outputs.add(output);
+        System.out.println();
+        outputs.add("");
+        output="";
+        for (int i=0;i<States.size();i++){
+//            System.out.print(i+"\t\t");
+            output+=i+"\t\t";
+            for (String terminal:Main.terminals){
+                int judge=jugde(i,terminal);
+                if (judge==1){
+                    output+="s"+map.get(new ac(i,terminal))+"\t\t";
+//                    System.out.print(output);
+                }
+                else if (judge==2){
+                    if (Main.productions.indexOf(map2.get(new ac(i,terminal)))==0){
+                        output+="acc\t\t";
+//                        System.out.print("acc\t\t");
+
+                    }
+                    else {
+                        output+="r"+Main.productions.indexOf(map2.get(new ac(i,terminal)))+"\t\t";
+//                        System.out.print("r"+Main.productions.indexOf(map2.get(new ac(i,terminal)))+"\t\t");
+                    }
+                }
+                else {
+                    output+="\t\t";
+//                    System.out.print("\t\t");
+                }
+            }
+            outputs.add(output);
+            output="";
+            outputs.add("");
+//            System.out.println();
+        }
+        Method.WriteFile("Action_Table.txt",outputs);
     }
 }

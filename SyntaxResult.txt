@@ -1,0 +1,103 @@
+type->int   Line:2
+T->type   Line:2
+type->int   Line:2
+T->type   Line:2
+Elist->T id   Line:2
+Elist->T id , Elist   Line:2
+type->int   Line:3
+T->type   Line:3
+E->id   Line:3
+D->T id = E ;   Line:4
+E->id   Line:4
+S->id = E ;   Line:5
+D->D S   Line:5
+E->id   Line:5
+S->id = E ;   Line:6
+D->D S   Line:6
+P->D   Line:6
+D->id ( Elist ) { P }   Line:9
+type->int   Line:9
+T->type   Line:9
+E->digitInt   Line:9
+D->T id = E ;   Line:10
+D->D D   Line:10
+type->int   Line:10
+T->type   Line:10
+E->digitInt   Line:10
+D->T id = E ;   Line:11
+D->D D   Line:11
+type->float   Line:11
+T->type   Line:11
+E->digitFloat   Line:11
+D->T id = E ;   Line:12
+D->D D   Line:12
+type->int   Line:12
+T->type   Line:12
+E->digitInt   Line:12
+L->id [ E ]   Line:12
+E->digitInt   Line:12
+L->L [ E ]   Line:12
+D->T L ;   Line:15
+D->D D   Line:15
+B->true   Line:15
+E->digitInt   Line:16
+S->id = E ;   Line:17
+P->S   Line:17
+E->digitInt   Line:19
+S->id = E ;   Line:20
+P->S   Line:20
+S2->if ( B ) { P } else { P }   Line:21
+S->S2   Line:21
+D->D S   Line:21
+op->++   Line:21
+S->id op ;   Line:24
+D->D S   Line:24
+E->digitInt   Line:24
+E->- E   Line:24
+E->digitInt   Line:24
+E->digitInt   Line:24
+E->E * E   Line:24
+E->E + E   Line:24
+S->id = E ;   Line:25
+D->D S   Line:25
+E->digitInt   Line:25
+E->digitInt   Line:25
+E->E + E   Line:25
+E->( E )   Line:25
+E->digitInt   Line:25
+E->E * E   Line:25
+S->id = E ;   Line:26
+D->D S   Line:26
+E->digitInt   Line:26
+L->id [ E ]   Line:26
+E->digitInt   Line:26
+L->L [ E ]   Line:26
+E->digitInt   Line:26
+S->L = E ;   Line:30
+D->D S   Line:30
+E->id   Line:30
+relop-><=   Line:30
+E->digitFloat   Line:30
+B->E relop E   Line:30
+E->id   Line:30
+relop-><   Line:30
+E->digitInt   Line:30
+B->E relop E   Line:30
+B->B && B   Line:30
+E->id   Line:30
+relop->>   Line:30
+E->digitInt   Line:30
+B->E relop E   Line:30
+B->B || B   Line:30
+E->id   Line:31
+E->digitFloat   Line:31
+E->E + E   Line:31
+S->id = E ;   Line:32
+P->S   Line:32
+S->while ( B ) { P }   Line:33
+D->D S   Line:33
+Elist2->id   Line:33
+Elist2->id , Elist2   Line:33
+S->call id ( Elist2 ) ;   Line:-1
+D->D S   Line:-1
+P->D   Line:-1

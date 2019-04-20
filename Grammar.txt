@@ -1,45 +1,50 @@
 S'->P
-start->function
-function->type id ( ) { P }
 P->D
-P->S
-S->S S
-D->D D
 D->D S
-D->T id;
+D->D D
+D->T id ;
 D->T id = E ;
-T-> type
+D->id ( Elist ) { P }
+Elist->T id , Elist
+Elist->T id @,
+T->type
 type->int 
 type->float
-type->long
-type->double
 type->char
-type->void
+P->S
+S->S S
 S->id = E ;
 S->id op ;
 S->op id ;
+S->call id ( Elist2 ) ;
+Elist2->id , Elist2
+Elist2->id @,
 op->++
 op->--
 S->L = E ;
-E->E + E
+E->E + E @*
 E->E * E
 E->- E
 E->( E )
-E->id
+E->id @[
 E->digitInt
-E->L
+E->digitFloat
+E->L @[
 L->id [ E ]
-L->L [ E ]
-S->if ( B ) { S }
-S->if ( B ) { S } else { S }
-S->while ( B ) { S }
-S->for ( S B ; idop ) { S }
-S->for ( S B ; id = E ) { S }
-B->B and B
-B->B or B
+L->L [ E ] 
+D->T L ;
+S->S1
+S->S2
+S1->if ( B ) { P } @else
+S2->if ( B ) { P } else { P }
+S->while ( B ) { P }
+S->do { B } while ( P ) 
+B->B && B
+B->B || B @&&
 B->E relop E
 B->true
 B->false
+B->! B
 relop-><
 relop-><=
 relop->==

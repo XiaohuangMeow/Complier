@@ -17,6 +17,10 @@ public class Tuple {
         this.line=line;
     }
 
+    public int getLine() {
+        return line;
+    }
+
     public String getInput() {
         return input;
     }
