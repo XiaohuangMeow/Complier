@@ -21,6 +21,9 @@ public class Main {
         List<String> lines= Method.ReadFile("Grammar2.txt");
         for (int i = 0; i < lines.size(); i++) {
             String line=lines.get(i);
+            if (line.equals("")||line.charAt(0)=='#'){
+                continue;
+            }
             int position=line.indexOf("->");
             String left=line.substring(0,position);
             String right=line.substring(position+2);
@@ -118,17 +121,7 @@ public class Main {
             oldset=newset;
             newset=new HashSet<>();
         }
-
-//        Set<Item> c=new HashSet<>();
-//        for (Item item1:set){
-//            for (Item item2:set){
-//                if (item1!=item2&&SameItem(item1,item2)){
-//
-//                }
-//            }
-//        }
         return new Closure(set);
-//        return new Closure(set);
     }
 
     public static Closure CalculateClosure(Set<Item> items){
@@ -162,25 +155,17 @@ public class Main {
             if (!states.get(i).contains(newitem)){
                 flag=true;
                 break;
-//                newitems.add(item);
-//                    return states.get(i);
             }}
             if (!flag){
                 return states.get(i);
             }
         }
-
         return null;
-//        return  CalculateClosure(firstItemInClosure);
     }
 
     public static List<Closure> cluster(){
-        System.out.println();
-//        Production begin=productions.get(0);
         Item begin=new Item(productions.get(0),"#");
-//        System.out.println(begin);
         Closure start=CalculateClosure(begin);
-//        System.out.println(start);
         List<Closure> Cluster=new ArrayList<>();
         List<Closure> oldcluster=new ArrayList<>();
         List<Closure> newcluster=new ArrayList<>();
@@ -189,7 +174,6 @@ public class Main {
         symbol.addAll(nonterminals);
         Cluster.add(start);
         oldcluster.add(start);
-//        System.out.println();
         boolean flag=true;
         while (flag){
             flag=false;
@@ -207,47 +191,18 @@ public class Main {
                     if (c!=null&&!Cluster.contains(c)){
                         Cluster.add(c);
                         newcluster.add(c);
-//                        System.out.println(newItems);
-//                        System.out.println(c);
                         flag=true;
                     }
                 }
             }
             oldcluster=newcluster;
             newcluster=new ArrayList<>();
-
-//            for (Closure closure: oldcluster) {
-//                System.out.println();
-//                System.out.println("Test:"+closure);
-//                for (String s : symbol) {
-////                    System.out.println(s);
-//                    Item it=closure.ItemContains(s);
-////                    System.out.println(it);
-//                    if (it==null){
-//                        continue;
-//                    }
-//                    it=new Item(it);
-//                    Closure c=CalculateClosure(it);
-//                    if (c!=null&&!Cluster.contains(c)){
-////                        Cluster.add(c);
-//                        System.out.println(it);
-//                        System.out.println("newClosure:"+c);
-//                        System.out.println();
-//                        newcluster.add(c);
-//                        flag=true;
-//                    }
-//                }
-//            }
-//            Cluster.addAll(newcluster);
-//            oldcluster=newcluster;
-//            newcluster=new ArrayList<>();
         }
-        System.out.println();
         return Cluster;
     }
 
     public static void ConstructLR1Table(List<Closure> States){
-        System.out.println(States.size());
+//        System.out.println(States.size());
         for (int k=0;k<States.size();k++){
             Closure closure=States.get(k);
 //            System.out.println();
@@ -359,7 +314,7 @@ public class Main {
     }
 
     public static void analysis(List<Tuple> tuples,List<Closure> States){
-        tuples.add(new Tuple("#",-1,""));
+        tuples.add(new Tuple("#",-1,"",-1));
         int read=0;
         Stack<Integer> StatusStack=new Stack<>();
         StatusStack.push(0);
@@ -484,8 +439,9 @@ public class Main {
         List<Tuple> tuples=new ArrayList<>();
         for (int i=0;i<token.size();i++){
             String[] arr=token.get(i).split(" ");
-            tuples.add(new Tuple(table.get(Integer.valueOf(arr[1])),Integer.valueOf(arr[1]),arr[3]));
-//            System.out.println(tuples.get(i));
+//            System.out.println(token.get(i));
+            tuples.add(new Tuple(table.get(Integer.valueOf(arr[1])),Integer.valueOf(arr[1]),arr[3],Integer.valueOf(arr[5])));
+            System.out.println(tuples.get(i));
         }
 
         analysis(tuples,States);

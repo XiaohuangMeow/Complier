@@ -9,14 +9,24 @@ public class Production {
     private String left;
     private String right;
     private List<String> rightList=new ArrayList<>();
+    private String prior=null;
 
     public Production(String left, String right) {
         this.left = left;
         this.right = right;
         String[] rights=right.split(" ");
         for (int i = 0; i < rights.length; i++) {
+            if (rights[i].charAt(0)=='@'){
+                String prior=rights[i].substring(1);
+                this.prior=prior;
+                return;
+            }
             rightList.add(rights[i]);
         }
+    }
+
+    public String getPrior() {
+        return prior;
     }
 
     public String getLeft() {

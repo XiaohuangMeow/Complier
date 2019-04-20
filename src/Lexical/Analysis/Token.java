@@ -15,14 +15,14 @@ public class Token {
         //关键字
         else if (Table.contains(s)){
             String output=s+"  "+"< "+Table.getPosition(s)+" , "+"_"+" >"+"   Line:"+lineNumber;
-            Main.WriteList.add("< "+Table.getPosition(s)+" , "+"_"+" >");
+            Main.WriteList.add("< "+Table.getPosition(s)+" , "+"_"+" > "+lineNumber);
             System.out.println(output);
         }
         //标识符
         else{
             int pos=SymbolTable.addSymbolTable(s);
             String output=s+"  "+"< "+0+" , "+pos+" >"+"   Line:"+lineNumber;
-            Main.WriteList.add("< "+0+" , "+pos+" >");
+            Main.WriteList.add("< "+0+" , "+pos+" > "+lineNumber);
             System.out.println(output);
         }
     }
@@ -36,11 +36,11 @@ public class Token {
         else{
             if (d.contains(".")||d.contains("E")){
                 String output=d+"  "+"< "+2+" , "+d+" >"+"   Line:"+lineNumber;
-                Main.WriteList.add("< "+2+" , "+d+" >");
+                Main.WriteList.add("< "+2+" , "+d+" > "+lineNumber);
                 System.out.println(output);
             }else{
                 String output=d+"  "+"< "+1+" , "+d+" >"+"   Line:"+lineNumber;
-                Main.WriteList.add("< "+1+" , "+d+" >");
+                Main.WriteList.add("< "+1+" , "+d+" > "+lineNumber);
                 System.out.println(output);
             }
         }
@@ -85,8 +85,7 @@ public class Token {
             String temp=String.valueOf(x)+String.valueOf(y);
             if (Table.contains(temp)){
                 String output=temp+"  "+"< "+Table.getPosition(temp)+" , "+"_"+" >"+"   Line:"+lineNumber;
-                System.out.println(output);
-                Main.WriteList.add("< "+Table.getPosition(temp)+" , "+"_"+" >");
+                Main.WriteList.add("< "+Table.getPosition(temp)+" , "+"_"+" > "+lineNumber);
                 System.out.println(output);
                 Main.pos+=2;
                 return;
@@ -103,7 +102,7 @@ public class Token {
                     string.append(y);
                     if (y=='"'){
                         String output=string+"  "+"< "+3+" , "+string+" >"+"   Line:"+lineNumber;
-                        Main.WriteList.add("< "+3+" , "+string+" >");
+                        Main.WriteList.add("< "+3+" , "+string+" > "+lineNumber);
                         System.out.println(output);
                         Main.pos++;
                         return;
@@ -118,7 +117,7 @@ public class Token {
             }
             String output=x+"  "+"< "+Table.getPosition(x)+" , "+"_"+" >"+"   Line:"+lineNumber;;
             System.out.println(output);
-            Main.WriteList.add("< "+Table.getPosition(x)+" , "+"_"+" >");
+            Main.WriteList.add("< "+Table.getPosition(x)+" , "+"_"+" > "+lineNumber);
             Main.pos++;
         }
         else {

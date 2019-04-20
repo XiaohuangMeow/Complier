@@ -5,14 +5,16 @@ public class Tuple {
     private String input;
     private int type;
     private String attribute;
+    private int line;
 
-    public Tuple(String input, int type, String attribute) {
+    public Tuple(String input, int type, String attribute,int line) {
         if (input.contains("_")){
             input=input.substring(1);
         }
         this.input = input;
         this.type = type;
         this.attribute = attribute;
+        this.line=line;
     }
 
     public String getInput() {

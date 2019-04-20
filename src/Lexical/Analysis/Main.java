@@ -36,7 +36,7 @@ public class Main {
     }
 
     private static void classifyType(char x, String line, int lineNumber) {
-        if (x==' '){
+        if (x==' '||x=='\t'){
             Main.pos++;
             return;
         }

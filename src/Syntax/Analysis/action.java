@@ -79,10 +79,20 @@ public class action {
 
     public static int jugde(int status, String terminal){
         ac a=new ac(status,terminal);
-        if (map2.containsKey(a)){
+
+        boolean isreduce=map2.containsKey(a);
+        boolean isshift=map.containsKey(a);
+        if (isreduce&&isshift){
+            Production p=action.nextProduction(status,terminal);
+            if (p.getPrior()!=null&&terminal.equals(p.getPrior())){
+                return 1;
+            }
+        }
+
+        if (isreduce){
             return 2;
         }
-        if (map.containsKey(a)){
+        if (isshift){
             return 1;
         }
         return 0;
