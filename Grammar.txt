@@ -1,0 +1,48 @@
+S'->P
+start->function
+function->type id ( ) { P }
+P->D
+P->S
+S->S S
+D->D D
+D->D S
+D->T id;
+D->T id = E ;
+T-> type
+type->int 
+type->float
+type->long
+type->double
+type->char
+type->void
+S->id = E ;
+S->id op ;
+S->op id ;
+op->++
+op->--
+S->L = E ;
+E->E + E
+E->E * E
+E->- E
+E->( E )
+E->id
+E->digitInt
+E->L
+L->id [ E ]
+L->L [ E ]
+S->if ( B ) { S }
+S->if ( B ) { S } else { S }
+S->while ( B ) { S }
+S->for ( S B ; idop ) { S }
+S->for ( S B ; id = E ) { S }
+B->B and B
+B->B or B
+B->E relop E
+B->true
+B->false
+relop-><
+relop-><=
+relop->==
+relop->!=
+relop->>
+relop->>=

@@ -53,12 +53,24 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void LexicalAnalysis() throws IOException {
         List<String> lines = Tool.ReadFile("test2.txt");
         analysis(lines);
         if (annotation){
             System.err.println("注解未完");
         }
+        Tool.WriteFile("result.txt",WriteList);
+        SymbolTable.WriteFile("SymbolTable.txt");
+    }
+
+    public static void main(String[] args) throws IOException {
+        List<String> lines = Tool.ReadFile("test2.txt");
+        analysis(lines);
+//        System.out.println("~~~"+WriteList);
+        if (annotation){
+            System.err.println("注解未完");
+        }
+//        System.out.println("~~~"+WriteList);
         Tool.WriteFile("result.txt",WriteList);
         SymbolTable.WriteFile("SymbolTable.txt");
     }

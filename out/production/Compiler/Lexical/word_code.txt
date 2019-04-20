@@ -1,6 +1,6 @@
-_ID  		0
-_constInteger  	1
-_constFloat 	2
+_id  		0
+_digitInt	  	1
+_digitFloat 	2
 _constString	3
 for		4
 do		5
@@ -40,3 +40,5 @@ false  		16
 {		39
 }		40
 ;		41
+[		42
+]		43

@@ -48,11 +48,11 @@ public class Table {
     }
 
     public static int getPosition(String s){
-        return keywords.indexOf(s);
+        return table.indexOf(s);
     }
 
     public static int getPosition(char c){
-        return keywords.indexOf(String.valueOf(c));
+        return table.indexOf(String.valueOf(c));
     }
 
 

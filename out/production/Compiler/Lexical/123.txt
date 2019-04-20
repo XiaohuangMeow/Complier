@@ -1,0 +1,125 @@
+"C:\Program Files\Java\jdk1.8.0_161\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.4\lib\idea_rt.jar=49876:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.4\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Users\51780\IdeaProjects\Compiler\out\production\Compiler" Syntax.Analysis.Main
+Production{left='SS', right='E', rightList=[E]}
+Production{left='E', right='- E', rightList=[-, E]}
+Production{left='E', right='E+E', rightList=[E+E]}
+Production{left='E', right='digitInt', rightList=[digitInt]}
+digitInt
+-
+E+E
+
+SS
+E
+abcdefg
+SS [digitInt, -, E+E]
+E [digitInt, -, E+E]
+digitInt [digitInt]
+- [-]
+E+E [E+E]
+
+Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}
+Closure{items=[Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+
+[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]
+Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
+[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
+[Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}]
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]
+Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
+[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]
+Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
+
+6
+Closure{items=[Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}, 
+				Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, 
+				Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, 
+				Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, 
+				Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, 
+				Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, 
+				Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
+Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
+6
+
+0  Closure{items=[Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+
+Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}
+Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
+goto:0  E  1
+
+Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
+action:0  digitInt  2
+
+Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+action:0  -  3
+
+Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}
+Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
+action:0  E+E  4
+
+1  Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
+
+Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}
+null
+!!  1  Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}  Production{left='SS', right='E', rightList=[E]}
+
+2  Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
+
+Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}
+null
+!!  2  Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}  Production{left='E', right='digitInt', rightList=[digitInt]}
+
+3  Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+
+Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
+action:3  digitInt  2
+
+Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}
+Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
+goto:3  E  5
+
+Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}
+Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+action:3  -  3
+
+Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}
+Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
+action:3  E+E  4
+
+4  Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
+
+Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}
+null
+!!  4  Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}  Production{left='E', right='E+E', rightList=[E+E]}
+
+5  Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
+
+Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}
+null
+!!  5  Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}  Production{left='E', right='- E', rightList=[-, E]}
+-  < 19 , _ >   Line:1
+1  < 1 , 1 >   Line:1
++  < 18 , _ >   Line:1
+2  < 1 , 2 >   Line:1
+[< 19 , _ >, < 1 , 1 >, < 18 , _ >, < 1 , 2 >]
+Tuple{input='-', type=19, attribute='_'}
+Tuple{input='digitInt', type=1, attribute='1'}
+Tuple{input='+', type=18, attribute='_'}
+Tuple{input='digitInt', type=1, attribute='2'}
+0   -
+[0]
+[]
+[0, 3]
+[-]
+3   digitInt
+[0, 3]
+[-]
+[0, 3, 2]
+[-, digitInt]

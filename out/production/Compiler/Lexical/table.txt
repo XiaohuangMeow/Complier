@@ -1,6 +1,6 @@
-_ID
-_constInteger
-_constFloat
+_id
+_digitInt
+_digitFloat
 _constString
 for
 do
@@ -40,3 +40,5 @@ false
 {
 }
 ;
+[
+]

@@ -1,17 +1,9 @@
-int a=100;
-float b=0.1;
-while (a<110){
-a++;
+c++;
+a=1;
+while (true){
+b=100;
+d=b;
+if (b>20){
+e=5;
 }
-String s="1dvfg;
-if (a>50)
-{
-float a=1.23.5;
-//
-b=0.5;
 }
-/***hhhhh***
-do{
-b=1.6;
-dasdsad*/
-}while (b>0.5);

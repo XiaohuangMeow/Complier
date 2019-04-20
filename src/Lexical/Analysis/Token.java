@@ -85,6 +85,7 @@ public class Token {
             String temp=String.valueOf(x)+String.valueOf(y);
             if (Table.contains(temp)){
                 String output=temp+"  "+"< "+Table.getPosition(temp)+" , "+"_"+" >"+"   Line:"+lineNumber;
+                System.out.println(output);
                 Main.WriteList.add("< "+Table.getPosition(temp)+" , "+"_"+" >");
                 System.out.println(output);
                 Main.pos+=2;
@@ -115,8 +116,9 @@ public class Token {
                     return;
                 }
             }
-            String output=x+"  "+"< "+Table.getPosition(x)+" , "+"_"+" >"+"   Line:"+lineNumber;
+            String output=x+"  "+"< "+Table.getPosition(x)+" , "+"_"+" >"+"   Line:"+lineNumber;;
             System.out.println(output);
+            Main.WriteList.add("< "+Table.getPosition(x)+" , "+"_"+" >");
             Main.pos++;
         }
         else {
