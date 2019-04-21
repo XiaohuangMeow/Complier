@@ -7,6 +7,7 @@ import Syntax.Structure.Item;
 import Syntax.Structure.Production;
 import Syntax.Structure.Tuple;
 
+import javax.sound.sampled.Line;
 import java.io.IOException;
 import java.util.*;
 
@@ -250,6 +251,7 @@ public class Main {
     }
 
     public static void analysis(List<Tuple> tuples,List<Closure> States){
+        int num=1;
         tuples.add(new Tuple("#",-1,"",-1));
         int read=0;
         Stack<Integer> StatusStack=new Stack<>();
@@ -263,6 +265,7 @@ public class Main {
             int judge=action.jugde(nowState,input);
             //移进
             if (judge==1){
+                num=tuples.get(read).getLine();
                 int next=action.nextState(nowState,input);
                 if (next==-1){
                     break;
@@ -281,9 +284,11 @@ public class Main {
                 }
                 //reduce
                 Production p=action.nextProduction(nowState,input);
-                String output=p+"  Line:"+tuples.get(read).getLine();
+//                String output=p+"  Line:"+tuples.get(read).getLine();
+                String output=p+"  Line:"+num;
                 outputs.add(output);
-                System.out.println(p+"  Line:"+tuples.get(read).getLine());
+//                System.out.println(p+"  Line:"+tuples.get(read).getLine());
+                System.out.println(p+"  Line:"+num);
                 int cnt=p.getRightList().size();
                 while (cnt-->0){
                     StatusStack.pop();
@@ -295,7 +300,25 @@ public class Main {
                 StatusStack.push(next);
             }
             else if (judge==0){
-//                System.out.println("aaaaaaaaaaaa");
+//                int cnt=0;
+//                System.out.println("a:"+SymbolStack.peek());
+                while (!SymbolStack.isEmpty()&&!SymbolStack.peek().equals("D") &&!SymbolStack.peek().equals("S")){
+                    SymbolStack.pop();
+                    StatusStack.pop();
+//                    cnt++;
+                }
+//                System.out.println(cnt);
+//                System.out.println(SymbolStack.size());
+//                System.out.println("b:"+SymbolStack.peek());
+                while (!tuples.get(read).getInput().equals(";")){
+                    read++;
+                }
+                read++;
+//                System.out.println(tuples.get(read).getInput());
+//                System.out.println(StatusStack.size());
+                String temp=tuples.get(read).getInput();
+//                System.out.println();
+                System.err.println("Erroe Line:"+num+"   "+temp);
             }
         }
     }

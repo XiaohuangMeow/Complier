@@ -4,7 +4,10 @@ D->D S
 D->D D
 D->T id ;
 D->T id = E ;
+D->struct id ( D D ) ;
 D->id ( Elist ) { P }
+D->read ( id ) ;
+D->print ( E ) ;
 Elist->T id , Elist
 Elist->T id @,
 T->type

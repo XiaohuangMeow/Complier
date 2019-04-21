@@ -3,26 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3a96950a-d0be-4535-996d-c301ee24e512" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Action_Table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Action_Table.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Goto_Table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Goto_Table.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Grammar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Grammar.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Grammar2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Lexical/Analysis/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Lexical/Analysis/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LexicalResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LexicalResult.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SyntaxResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SyntaxResult.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Lexical/table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Lexical/table.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/ac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/ac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/gotoState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/gotoState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/gt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/gt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Structure/Production.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Structure/Production.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Structure/Tuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Structure/Tuple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lexical/Analysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/Analysis/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lexical/table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/table.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Syntax/Analysis/action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Analysis/action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Syntax/Analysis/gotoState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Analysis/gotoState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Syntax/Structure/Production.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Structure/Production.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Syntax/Structure/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Structure/Tuple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2 - 副本.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,38 +36,74 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="17098" />
+          <entry key="java" value="17403" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="17098" />
+          <entry key="JAVA" value="17403" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="179" />
-          <entry key="txt" value="6" />
+          <entry key="java" value="180" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="179" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="JAVA" value="180" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/action.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="124" column="17" lean-forward="true" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+            <state relative-caret-position="86">
+              <caret line="303" column="62" lean-forward="true" selection-start-line="303" selection-start-column="62" selection-end-line="303" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#GenerateProduction#0;class#Main#0" />
+                <element signature="method#fillingTerminals#0;class#Main#0" />
+                <element signature="method#GenerateFirst#0;class#Main#0" />
+                <element signature="method#getFirst#0;class#Main#0" />
+                <element signature="method#CalculateClosure#0;class#Main#0" />
+                <element signature="method#CalculateClosure#1;class#Main#0" />
+                <element signature="method#Goto#0;class#Main#0" />
+                <element signature="method#cluster#0;class#Main#0" />
+                <element signature="method#ConstructLR1Table#0;class#Main#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Action_Table.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16265">
+              <caret line="1303" lean-forward="true" selection-start-line="1303" selection-end-line="1304" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Grammar.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SyntaxResult.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
             </state>
           </provider>
         </entry>
@@ -85,43 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Goto_Table.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-821">
+            <state relative-caret-position="-4906">
               <caret line="974" column="64" lean-forward="true" selection-start-line="974" selection-start-column="64" selection-end-line="974" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Action_Table.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9234">
-              <caret line="486" column="24" selection-start-line="486" selection-start-column="24" selection-end-line="486" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="323" column="28" lean-forward="true" selection-start-line="323" selection-start-column="28" selection-end-line="323" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/gotoState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -172,9 +163,9 @@
         <option value="$PROJECT_DIR$/src/Syntax/Structure/Production.java" />
         <option value="$PROJECT_DIR$/src/Syntax/Structure/Tuple.java" />
         <option value="$PROJECT_DIR$/src/Lexical/Analysis/Main.java" />
-        <option value="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" />
         <option value="$PROJECT_DIR$/src/Syntax/Analysis/gotoState.java" />
         <option value="$PROJECT_DIR$/src/Syntax/Analysis/action.java" />
+        <option value="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" />
       </list>
     </option>
   </component>
@@ -202,55 +193,6 @@
               <item name="Compiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexical" type="462c0819:PsiDirectoryNode" />
-              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Syntax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Syntax" type="462c0819:PsiDirectoryNode" />
-              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Syntax" type="462c0819:PsiDirectoryNode" />
-              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="action.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Syntax" type="462c0819:PsiDirectoryNode" />
-              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="gotoState.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Syntax" type="462c0819:PsiDirectoryNode" />
-              <item name="Structure" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -259,7 +201,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555788678750" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555816799709" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -379,10 +321,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20040214" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20040214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -391,7 +332,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26487252" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26487252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -589,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SyntaxResult.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SymbolTable.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,20 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Action_Table.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9234">
-          <caret line="486" column="24" selection-start-line="486" selection-start-column="24" selection-end-line="486" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Goto_Table.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-821">
-          <caret line="974" column="64" lean-forward="true" selection-start-line="974" selection-start-column="64" selection-end-line="974" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -632,23 +552,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="323" column="28" lean-forward="true" selection-start-line="323" selection-start-column="28" selection-end-line="323" selection-end-column="28" />
+        <state relative-caret-position="1349">
+          <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/action.java">
+    <entry file="file://$PROJECT_DIR$/Grammar.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="124" column="17" lean-forward="true" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+        <state relative-caret-position="342">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SyntaxResult.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Goto_Table.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4906">
+          <caret line="974" column="64" lean-forward="true" selection-start-line="974" selection-start-column="64" selection-end-line="974" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="303" column="62" lean-forward="true" selection-start-line="303" selection-start-column="62" selection-end-line="303" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#GenerateProduction#0;class#Main#0" />
+            <element signature="method#fillingTerminals#0;class#Main#0" />
+            <element signature="method#GenerateFirst#0;class#Main#0" />
+            <element signature="method#getFirst#0;class#Main#0" />
+            <element signature="method#CalculateClosure#0;class#Main#0" />
+            <element signature="method#CalculateClosure#1;class#Main#0" />
+            <element signature="method#Goto#0;class#Main#0" />
+            <element signature="method#cluster#0;class#Main#0" />
+            <element signature="method#ConstructLR1Table#0;class#Main#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Action_Table.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16265">
+          <caret line="1303" lean-forward="true" selection-start-line="1303" selection-end-line="1304" />
         </state>
       </provider>
     </entry>
