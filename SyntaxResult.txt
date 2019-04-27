@@ -1,108 +1,63 @@
+type->int   Line:1
+T->type   Line:1
+E->digitInt   Line:1
+D->T id = E ;   Line:1
 type->int   Line:2
 T->type   Line:2
-type->int   Line:2
-T->type   Line:2
-Elist->T id   Line:2
-Elist->T id , Elist   Line:2
+E->digitInt   Line:2
+D->T id = E ;   Line:2
+D->D D   Line:2
 type->int   Line:3
 T->type   Line:3
-E->id   Line:3
+E->digitInt   Line:3
 D->T id = E ;   Line:3
-E->id   Line:4
-S->id = E ;   Line:4
-D->D S   Line:4
-E->id   Line:5
-S->id = E ;   Line:5
-D->D S   Line:5
-P->D   Line:5
-D->id ( Elist ) { P }   Line:6
-type->int   Line:9
-T->type   Line:9
-E->digitInt   Line:9
-D->T id = E ;   Line:9
-D->D D   Line:9
-type->int   Line:10
-T->type   Line:10
-E->digitInt   Line:10
-D->T id = E ;   Line:10
-D->D D   Line:10
-type->float   Line:11
-T->type   Line:11
-E->digitFloat   Line:11
-D->T id = E ;   Line:11
-D->D D   Line:11
-type->int   Line:12
-T->type   Line:12
-E->digitInt   Line:12
-L->id [ E ]   Line:12
-E->digitInt   Line:12
-L->L [ E ]   Line:12
-D->T L ;   Line:12
-D->D D   Line:12
-B->true   Line:15
-E->digitInt   Line:16
-S->id = E ;   Line:16
-P->S   Line:16
-E->digitInt   Line:19
-S->id = E ;   Line:19
-P->S   Line:19
-S2->if ( B ) { P } else { P }   Line:20
-S->S2   Line:20
-D->D S   Line:20
-op->++   Line:21
-S->id op ;   Line:21
-D->D S   Line:21
-E->digitInt   Line:24
-E->- E   Line:24
-E->digitInt   Line:24
-E->digitInt   Line:24
-E->E * E   Line:24
-E->E + E   Line:24
-S->id = E ;   Line:24
-D->D S   Line:24
-E->digitInt   Line:25
-E->digitInt   Line:25
-E->E + E   Line:25
-E->( E )   Line:25
-E->digitInt   Line:25
-E->E * E   Line:25
-S->id = E ;   Line:25
-D->D S   Line:25
-E->digitInt   Line:26
-L->id [ E ]   Line:26
-E->digitInt   Line:26
-L->L [ E ]   Line:26
-E->digitInt   Line:26
-S->L = E ;   Line:26
-D->D S   Line:26
-D->read ( id ) ;   Line:31
-D->D D   Line:31
-E->id   Line:32
-D->print ( E ) ;   Line:32
-D->D D   Line:32
-E->id   Line:36
-relop-><=   Line:36
-E->digitFloat   Line:36
-B->E relop E   Line:36
-E->id   Line:36
-relop-><   Line:36
-E->digitInt   Line:36
-B->E relop E   Line:36
-B->B && B   Line:36
-E->id   Line:36
-relop->>   Line:36
-E->digitInt   Line:36
-B->E relop E   Line:36
-B->B || B   Line:36
-E->id   Line:37
-E->digitFloat   Line:37
-E->E + E   Line:37
-S->id = E ;   Line:37
-P->S   Line:37
-S->while ( B ) { P }   Line:38
-D->D S   Line:38
-Elist2->id   Line:39
-Elist2->id , Elist2   Line:39
-S->call id ( Elist2 ) ;   Line:39
-D->D S   Line:39
-P->D   Line:39
+D->D D   Line:3
+type->int   Line:4
+T->type   Line:4
+E->digitInt   Line:4
+D->T id = E ;   Line:4
+D->D D   Line:4
+type->int   Line:5
+T->type   Line:5
+E->digitInt   Line:5
+D->T id = E ;   Line:5
+D->D D   Line:5
+type->int   Line:6
+T->type   Line:6
+E->digitInt   Line:6
+D->T id = E ;   Line:6
+D->D D   Line:6
+type->int   Line:7
+T->type   Line:7
+E->digitInt   Line:7
+D->T id = E ;   Line:7
+D->D D   Line:7
+M->$   Line:8
+E->id   Line:8
+relop-><   Line:8
+E->id   Line:8
+B->E relop E   Line:8
+M->$   Line:8
+E->id   Line:9
+relop-><   Line:9
+E->id   Line:9
+B->E relop E   Line:9
+M->$   Line:9
+E->id   Line:10
+E->id   Line:10
+E->E + E   Line:10
+S->id = E ;   Line:10
+P->S   Line:10
+N->$   Line:11
+M->$   Line:11
+E->id   Line:12
+E->id   Line:12
+E->E * E   Line:12
+S->id = E ;   Line:12
+P->S   Line:12
+S2->if ( B ) { M P } N else { M P }   Line:13
+S->S2   Line:13
+P->S   Line:13
+S->while ( M B ) { M P }   Line:14
+D->D S   Line:14
+P->D   Line:14

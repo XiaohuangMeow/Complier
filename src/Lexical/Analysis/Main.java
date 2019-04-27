@@ -64,7 +64,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        List<String> lines = Tool.ReadFile("test.txt");
+        List<String> lines = Tool.ReadFile("test2.txt");
         analysis(lines);
 //        System.out.println("~~~"+WriteList);
         if (annotation){

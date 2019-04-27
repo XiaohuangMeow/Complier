@@ -1,125 +1,132 @@
-"C:\Program Files\Java\jdk1.8.0_161\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.4\lib\idea_rt.jar=49876:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.4\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Users\51780\IdeaProjects\Compiler\out\production\Compiler" Syntax.Analysis.Main
-Production{left='SS', right='E', rightList=[E]}
-Production{left='E', right='- E', rightList=[-, E]}
-Production{left='E', right='E+E', rightList=[E+E]}
-Production{left='E', right='digitInt', rightList=[digitInt]}
-digitInt
--
-E+E
+3 D->D D 
 
-SS
-E
-abcdefg
-SS [digitInt, -, E+E]
-E [digitInt, -, E+E]
-digitInt [digitInt]
-- [-]
-E+E [E+E]
+56 M->$ 
 
-Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}
-Closure{items=[Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+31 E->id 
 
-[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]
-Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
-[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
-[Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}]
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
-[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]
-Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
-[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]
-Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
+50 relop->< 
 
-6
-Closure{items=[Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}, 
-				Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, 
-				Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, 
-				Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
-Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, 
-				Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, 
-				Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, 
-				Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
-Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
-Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
-6
+31 E->id 
 
-0  Closure{items=[Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
+46 B->E relop E 
+7
+fourTuple{op='j<', arg1='a', arg2='b', result=''}
+fourTuple{op='j', arg1='', arg2='', result=''}
+9
+9
+truelist 7
+falselist 8
 
-Item{left='SS', right='E', rightList=[E], pos=0, countRight=1, lookahead='#'}
-Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
-goto:0  E  1
+56 M->$ 
 
-Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
-action:0  digitInt  2
+31 E->id 
 
-Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
-action:0  -  3
+50 relop->< 
 
-Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}
-Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
-action:0  E+E  4
+31 E->id 
 
-1  Closure{items=[Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}]}
+46 B->E relop E 
+9
+fourTuple{op='j<', arg1='c', arg2='d', result=''}
+fourTuple{op='j', arg1='', arg2='', result=''}
+truelist 9
+falselist 10
+11
+11
 
-Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}
-null
-!!  1  Item{left='SS', right='E', rightList=[E], pos=1, countRight=1, lookahead='#'}  Production{left='SS', right='E', rightList=[E]}
+56 M->$ 
 
-2  Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
+31 E->id 
 
-Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}
-null
-!!  2  Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}  Production{left='E', right='digitInt', rightList=[digitInt]}
+31 E->id 
 
-3  Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
 
-Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=1, countRight=1, lookahead='#'}]}
-action:3  digitInt  2
+0	fourTuple{op='=', arg1='1', arg2='', result='9'}
+1	fourTuple{op='=', arg1='1', arg2='', result='b'}
+2	fourTuple{op='=', arg1='1', arg2='', result='c'}
+3	fourTuple{op='=', arg1='1', arg2='', result='d'}
+4	fourTuple{op='=', arg1='1', arg2='', result='x'}
+5	fourTuple{op='=', arg1='1', arg2='', result='y'}
+6	fourTuple{op='=', arg1='1', arg2='', result='z'}
+7	fourTuple{op='j<', arg1='a', arg2='b', result=''}
+8	fourTuple{op='j', arg1='', arg2='', result=''}
+9	fourTuple{op='j<', arg1='c', arg2='d', result='11'}*
+10	fourTuple{op='j', arg1='', arg2='', result='14'}*
+11	fourTuple{op='+', arg1='y', arg2='z', result='t0'}
+12	fourTuple{op='=', arg1='t0', arg2='', result='x'}
+13	fourTuple{op='j', arg1='', arg2='', result=''}
+14	fourTuple{op='*', arg1='y', arg2='z', result='t1'}
+15	fourTuple{op='=', arg1='t1', arg2='', result='x'}
+16	fourTuple{op='j', arg1='', arg2='', result='7'}
 
-Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}
-Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
-goto:3  E  5
+27 E->E + E 
+fourTuple{op='+', arg1='y', arg2='z', result='t0'}
+12
 
-Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}
-Closure{items=[Item{left='E', right='digitInt', rightList=[digitInt], pos=0, countRight=1, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=1, countRight=2, lookahead='#'}, Item{left='E', right='- E', rightList=[-, E], pos=0, countRight=2, lookahead='#'}, Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}]}
-action:3  -  3
+18 S->id = E ; 
+fourTuple{op='=', arg1='t0', arg2='', result='x'}
+13
 
-Item{left='E', right='E+E', rightList=[E+E], pos=0, countRight=1, lookahead='#'}
-Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
-action:3  E+E  4
+16 P->S 
 
-4  Closure{items=[Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}]}
+57 N->$ 
+fourTuple{op='j', arg1='', arg2='', result=''}
+14
 
-Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}
-null
-!!  4  Item{left='E', right='E+E', rightList=[E+E], pos=1, countRight=1, lookahead='#'}  Production{left='E', right='E+E', rightList=[E+E]}
+56 M->$ 
 
-5  Closure{items=[Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}]}
+31 E->id 
 
-Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}
-null
-!!  5  Item{left='E', right='- E', rightList=[-, E], pos=2, countRight=2, lookahead='#'}  Production{left='E', right='- E', rightList=[-, E]}
--  < 19 , _ >   Line:1
-1  < 1 , 1 >   Line:1
-+  < 18 , _ >   Line:1
-2  < 1 , 2 >   Line:1
-[< 19 , _ >, < 1 , 1 >, < 18 , _ >, < 1 , 2 >]
-Tuple{input='-', type=19, attribute='_'}
-Tuple{input='digitInt', type=1, attribute='1'}
-Tuple{input='+', type=18, attribute='_'}
-Tuple{input='digitInt', type=1, attribute='2'}
-0   -
-[0]
-[]
-[0, 3]
-[-]
-3   digitInt
-[0, 3]
-[-]
-[0, 3, 2]
-[-, digitInt]
+31 E->id 
+
+28 E->E * E 
+fourTuple{op='*', arg1='y', arg2='z', result='t1'}
+15
+
+18 S->id = E ; 
+fourTuple{op='=', arg1='t1', arg2='', result='x'}
+16
+
+16 P->S 
+
+41 S2->if ( B ) { M P } N else { M P } 
+[9]
+11
+fourTuple{op='j<', arg1='c', arg2='d', result='11'}
+14
+fourTuple{op='j', arg1='', arg2='', result='14'}
+
+39 S->S2 
+
+16 P->S 
+
+42 S->while ( M B ) { M P } 
+7
+fourTuple{op='=', arg1='1', arg2='', result='7'}
+fourTuple{op='=', arg1='1', arg2='', result='9'}
+
+2 D->D S 
+
+1 P->D 
+Action_Table
+
+Goto_Table
+0	fourTuple{op='=', arg1='1', arg2='', result='9'}
+1	fourTuple{op='=', arg1='1', arg2='', result='b'}
+2	fourTuple{op='=', arg1='1', arg2='', result='c'}
+3	fourTuple{op='=', arg1='1', arg2='', result='d'}
+4	fourTuple{op='=', arg1='1', arg2='', result='x'}
+5	fourTuple{op='=', arg1='1', arg2='', result='y'}
+6	fourTuple{op='=', arg1='1', arg2='', result='z'}
+7	fourTuple{op='j<', arg1='a', arg2='b', result=''}
+8	fourTuple{op='j', arg1='', arg2='', result=''}
+9	fourTuple{op='j<', arg1='c', arg2='d', result='11'}
+10	fourTuple{op='j', arg1='', arg2='', result='14'}
+11	fourTuple{op='+', arg1='y', arg2='z', result='t0'}
+12	fourTuple{op='=', arg1='t0', arg2='', result='x'}
+13	fourTuple{op='j', arg1='', arg2='', result=''}
+14	fourTuple{op='*', arg1='y', arg2='z', result='t1'}
+15	fourTuple{op='=', arg1='t1', arg2='', result='x'}
+16	fourTuple{op='j', arg1='', arg2='', result='7'}
+
+Process finished with exit code 0

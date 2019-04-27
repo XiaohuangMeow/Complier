@@ -1,39 +1,14 @@
-/*º¯Êı*/
-swap(int x,int y){
- int t=x;
- x=y;
- y=t;
-}
-
-/*ÉùÃ÷Óï¾ä*/
 int a=1;
-int c=0;
-float b=1.1;
-int d[5][2];
-
-/*ÅĞ¶ÏÓï¾ä*/
-if (true){
-  a=2;
+int b=1;
+int c=1;
+int d=1;
+int x=1;
+int y=1;
+int z=1;
+while ( a < b ){
+ if (c<d){
+    x=y+z;
+ } else {
+    x =y*z;
+  }
 }
-else{
-  a=3;
-}
-a++;
-
-/*¸³ÖµÓï¾ä*/
-a=-1+2*3;
-c=(1+2)*9;
-d[1][0]=2;
-
-if ( ;
-
-/*ÊäÈëÊä³öÓï¾ä*/
-read(b);
-print(a);
-
-/*Ñ­»·Óï¾ä*/
-/*²¼¶û±í´ïÊ½*/
-while (b<=2.3&&a<10||a>20){
- b=b+0.2;
-}
-call swap(a,c);

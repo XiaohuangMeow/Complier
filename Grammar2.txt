@@ -38,9 +38,9 @@ L->L [ E ]
 D->T L ;
 S->S1
 S->S2
-S1->if ( B ) { M P } @else
-S2->if ( B ) { M P } N else { M P }
-S->while ( M B ) { M P }
+S1->if ( B ) { P } @else
+S2->if ( B ) { P } else { P }
+S->while ( B ) { P }
 S->do { B } while ( P ) 
 B->B && B
 B->B || B @&&
@@ -54,5 +54,3 @@ relop->==
 relop->!=
 relop->>
 relop->>=
-M->$
-N->$

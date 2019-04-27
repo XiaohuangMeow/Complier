@@ -35,10 +35,12 @@ public class Token {
         }
         else{
             if (d.contains(".")||d.contains("E")){
+                SymbolTable.constFloat.add(d);
                 String output=d+"  "+"< "+2+" , "+d+" >"+"   Line:"+lineNumber;
                 Main.WriteList.add("< "+2+" , "+d+" > "+lineNumber);
                 System.out.println(output);
             }else{
+                SymbolTable.constInt.add(d);
                 String output=d+"  "+"< "+1+" , "+d+" >"+"   Line:"+lineNumber;
                 Main.WriteList.add("< "+1+" , "+d+" > "+lineNumber);
                 System.out.println(output);
