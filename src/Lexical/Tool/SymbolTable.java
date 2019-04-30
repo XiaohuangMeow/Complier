@@ -12,7 +12,6 @@ public class SymbolTable {
 
     private static List<String> symbolTable=new ArrayList<>();
     private static Map<String,String> symbolTypeTable=new HashMap<>();
-    private static Map<String,Number> symbolValue=new HashMap<>();
     public static List<String> constInt=new ArrayList<>();
     public static int intConstNum=0;
     public static List<String> constFloat=new ArrayList<>();
@@ -46,14 +45,6 @@ public class SymbolTable {
 
     public static void addIDtype(String id,String type){
         symbolTypeTable.put(id,type);
-    }
-
-    public static void addValue(String id,Number number){
-        symbolValue.put(id,number);
-    }
-
-    public static Number getValue(String id){
-        return symbolValue.get(id);
     }
 
     public static String getString(int x){

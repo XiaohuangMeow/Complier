@@ -9,12 +9,10 @@ public class fourTuple {
 
     @Override
     public String toString() {
-        return "fourTuple{" +
-                "op='" + op + '\'' +
-                ", arg1='" + arg1 + '\'' +
-                ", arg2='" + arg2 + '\'' +
-                ", result='" + result + '\'' +
-                '}';
+        if (arg1.equals("")){arg1="_";};
+        if (arg2.equals("")){arg2="_";};
+        return "("+op+","+arg1+","+arg2+","+result+")";
+
     }
 
     public fourTuple(String op, String arg1, String arg2, String result) {

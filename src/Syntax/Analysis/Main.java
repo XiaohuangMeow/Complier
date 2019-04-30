@@ -1,13 +1,11 @@
 package Syntax.Analysis;
 
-import Lexical.Analysis.Table;
 import Syntax.Method.Method;
 import Syntax.Structure.Closure;
 import Syntax.Structure.Item;
 import Syntax.Structure.Production;
 import Syntax.Structure.Tuple;
 
-import javax.sound.sampled.Line;
 import java.io.IOException;
 import java.util.*;
 
@@ -274,7 +272,7 @@ public class Main {
                 StatusStack.push(next);
                 SymbolStack.push(input);
                 read++;
-//                System.out.println("shift:"+input);
+                System.out.println("shift:"+input);
             }
             //规约
             else if (judge == 2) {
@@ -286,10 +284,8 @@ public class Main {
                 }
                 //reduce
                 Production p = action.nextProduction(nowState, input);
-//                String output=p+"  Line:"+tuples.get(read).getLine();
                 String output = p + "  Line:" + num;
                 outputs.add(output);
-//                System.out.println(p+"  Line:"+tuples.get(read).getLine());
                 System.out.println(p + "  Line:" + num);
 
                 int cnt = p.getRightList().size();
@@ -299,7 +295,7 @@ public class Main {
                     SymbolStack.pop();
                 }
                 SymbolStack.push(p.getLeft());
-//                System.out.println("reduce:"+p);
+                System.out.println("reduce:"+p);
                 //goto
                 int next = gotoState.nextState(StatusStack.peek(), SymbolStack.peek());
                 StatusStack.push(next);

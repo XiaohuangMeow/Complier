@@ -1,25 +1,25 @@
-S'->P
+S'->P @return
 P->D
 D->D S
 D->D D
 D->T id ;
 D->T id = E ;
-D->struct id ( D D ) ;
-D->id ( Elist ) { P }
-D->read ( id ) ;
+D->struct id ( D ) ;
+func->T id M ( 
+D->func Elist ) { P return E ; }
 D->print ( E ) ;
-Elist->T id , Elist
-Elist->T id @,
+Elist->Elist , T id
+Elist->T id
 T->type
 type->int 
 type->float
-type->char
+type->void
 P->S
 S->S S
 S->id = E ;
 S->id op ;
 S->op id ;
-S->call id ( Elist2 ) ;
+S->call id M ( Elist2 ) ;
 Elist2->id , Elist2
 Elist2->id @,
 op->++
@@ -29,7 +29,7 @@ E->E + E @*
 E->E * E
 E->- E
 E->( E )
-E->id @[
+E->id @(
 E->digitInt
 E->digitFloat
 E->L @[
@@ -42,8 +42,8 @@ S1->if ( B ) { M P } @else
 S2->if ( B ) { M P } N else { M P }
 S->while ( M B ) { M P }
 S->do { B } while ( P ) 
-B->B && B
-B->B || B @&&
+B->B && M B
+B->B || M B @&&
 B->E relop E
 B->true
 B->false

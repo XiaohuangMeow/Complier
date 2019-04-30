@@ -1,132 +1,23 @@
-3 D->D D 
 
-56 M->$ 
-
-31 E->id 
-
-50 relop->< 
-
-31 E->id 
-
-46 B->E relop E 
-7
-fourTuple{op='j<', arg1='a', arg2='b', result=''}
-fourTuple{op='j', arg1='', arg2='', result=''}
-9
-9
-truelist 7
-falselist 8
-
-56 M->$ 
-
-31 E->id 
-
-50 relop->< 
-
-31 E->id 
-
-46 B->E relop E 
-9
-fourTuple{op='j<', arg1='c', arg2='d', result=''}
-fourTuple{op='j', arg1='', arg2='', result=''}
-truelist 9
-falselist 10
-11
-11
-
-56 M->$ 
-
-31 E->id 
-
-31 E->id 
-
-
-0	fourTuple{op='=', arg1='1', arg2='', result='9'}
-1	fourTuple{op='=', arg1='1', arg2='', result='b'}
-2	fourTuple{op='=', arg1='1', arg2='', result='c'}
-3	fourTuple{op='=', arg1='1', arg2='', result='d'}
-4	fourTuple{op='=', arg1='1', arg2='', result='x'}
-5	fourTuple{op='=', arg1='1', arg2='', result='y'}
-6	fourTuple{op='=', arg1='1', arg2='', result='z'}
-7	fourTuple{op='j<', arg1='a', arg2='b', result=''}
-8	fourTuple{op='j', arg1='', arg2='', result=''}
-9	fourTuple{op='j<', arg1='c', arg2='d', result='11'}*
-10	fourTuple{op='j', arg1='', arg2='', result='14'}*
-11	fourTuple{op='+', arg1='y', arg2='z', result='t0'}
-12	fourTuple{op='=', arg1='t0', arg2='', result='x'}
-13	fourTuple{op='j', arg1='', arg2='', result=''}
-14	fourTuple{op='*', arg1='y', arg2='z', result='t1'}
-15	fourTuple{op='=', arg1='t1', arg2='', result='x'}
-16	fourTuple{op='j', arg1='', arg2='', result='7'}
-
-27 E->E + E 
-fourTuple{op='+', arg1='y', arg2='z', result='t0'}
-12
-
-18 S->id = E ; 
-fourTuple{op='=', arg1='t0', arg2='', result='x'}
-13
-
-16 P->S 
-
-57 N->$ 
-fourTuple{op='j', arg1='', arg2='', result=''}
-14
-
-56 M->$ 
-
-31 E->id 
-
-31 E->id 
-
-28 E->E * E 
-fourTuple{op='*', arg1='y', arg2='z', result='t1'}
-15
-
-18 S->id = E ; 
-fourTuple{op='=', arg1='t1', arg2='', result='x'}
-16
-
-16 P->S 
-
-41 S2->if ( B ) { M P } N else { M P } 
-[9]
-11
-fourTuple{op='j<', arg1='c', arg2='d', result='11'}
-14
-fourTuple{op='j', arg1='', arg2='', result='14'}
-
-39 S->S2 
-
-16 P->S 
-
-42 S->while ( M B ) { M P } 
-7
-fourTuple{op='=', arg1='1', arg2='', result='7'}
-fourTuple{op='=', arg1='1', arg2='', result='9'}
-
-2 D->D S 
-
-1 P->D 
-Action_Table
-
-Goto_Table
-0	fourTuple{op='=', arg1='1', arg2='', result='9'}
-1	fourTuple{op='=', arg1='1', arg2='', result='b'}
-2	fourTuple{op='=', arg1='1', arg2='', result='c'}
-3	fourTuple{op='=', arg1='1', arg2='', result='d'}
-4	fourTuple{op='=', arg1='1', arg2='', result='x'}
-5	fourTuple{op='=', arg1='1', arg2='', result='y'}
-6	fourTuple{op='=', arg1='1', arg2='', result='z'}
-7	fourTuple{op='j<', arg1='a', arg2='b', result=''}
-8	fourTuple{op='j', arg1='', arg2='', result=''}
-9	fourTuple{op='j<', arg1='c', arg2='d', result='11'}
-10	fourTuple{op='j', arg1='', arg2='', result='14'}
-11	fourTuple{op='+', arg1='y', arg2='z', result='t0'}
-12	fourTuple{op='=', arg1='t0', arg2='', result='x'}
-13	fourTuple{op='j', arg1='', arg2='', result=''}
-14	fourTuple{op='*', arg1='y', arg2='z', result='t1'}
-15	fourTuple{op='=', arg1='t1', arg2='', result='x'}
-16	fourTuple{op='j', arg1='', arg2='', result='7'}
-
-Process finished with exit code 0
+int a=1;
+int b=1;
+int c=1;
+int d=1;
+int x=1;
+int y=1;
+int z=1;
+float temp=a;
+z=a*(-c+b);
+while ( a < b ){
+ if (c<d){
+    x=y+z;
+ } else {
+    x=y*z;
+  }
+}
+if (a>d){
+ a=a+1;
+}
+while (c<b&&x>y){
+ b=c+1;
+}

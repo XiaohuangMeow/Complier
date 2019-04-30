@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a96950a-d0be-4535-996d-c301ee24e512" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Semantic/Analysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/attribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semantic/fourTuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semantic/functionTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semantic/par.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Action_Table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Action_Table.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Goto_Table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Goto_Table.txt" afterDir="false" />
@@ -13,14 +12,17 @@
       <change beforePath="$PROJECT_DIR$/SymbolTable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SymbolTable.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SyntaxResult.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SyntaxResult.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compiler/Lexical/123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Lexical/123.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Lexical/Analysis/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Lexical/Analysis/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Lexical/Analysis/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Lexical/Analysis/Token.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compiler/Lexical/Tool/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Lexical/Tool/SymbolTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Semantic/Analysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Semantic/Analysis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Semantic/attribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Semantic/attribute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/Semantic/fourTuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Semantic/fourTuple.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/Syntax/Analysis/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lexical/123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/123.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lexical/Analysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/Analysis/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lexical/Analysis/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/Analysis/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lexical/table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/table.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/Analysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/attribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semantic/fourTuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/fourTuple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
@@ -31,39 +33,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="245273773">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="22758" />
+          <entry key="java" value="25644" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22758" />
+          <entry key="JAVA" value="25644" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="203" />
-          <entry key="txt" value="12" />
+          <entry key="java" value="216" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="203" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="JAVA" value="216" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
     </session>
@@ -76,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Semantic/Analysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="143" column="36" selection-start-line="143" selection-start-column="36" selection-end-line="143" selection-end-column="36" />
+            <state relative-caret-position="287">
+              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,66 +95,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/gotoState.java">
+        <entry file="file://$PROJECT_DIR$/src/Semantic/attribute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="335">
+              <caret line="150" column="43" lean-forward="true" selection-start-line="150" selection-start-column="43" selection-end-line="150" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="e#1237#1238#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Semantic/fourTuple.java">
+        <entry file="file://$PROJECT_DIR$/SYMBOL.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#769#770#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java">
+        <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Semantic/attribute.java">
+        <entry file="file://$PROJECT_DIR$/fourTuples.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="354" column="72" selection-start-line="354" selection-start-column="72" selection-end-line="354" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="412">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -158,6 +141,19 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>inser</find>
+      <find>set</find>
+      <find>add</find>
+      <find>global_functionTable</find>
+      <find>functemp</find>
+      <find>Analysis.fourTuples</find>
+      <find>system.out</find>
+      <find>system.out.pr</find>
+      <find>s</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -196,21 +192,25 @@
         <option value="$PROJECT_DIR$/src/Syntax/Analysis/action.java" />
         <option value="$PROJECT_DIR$/src/Lexical/Analysis/Main.java" />
         <option value="$PROJECT_DIR$/src/Semantic/atttribute.java" />
-        <option value="$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java" />
         <option value="$PROJECT_DIR$/src/Lexical/Analysis/Token.java" />
         <option value="$PROJECT_DIR$/src/Syntax/Analysis/gotoState.java" />
-        <option value="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" />
+        <option value="$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java" />
         <option value="$PROJECT_DIR$/src/Semantic/fourTuple.java" />
+        <option value="$PROJECT_DIR$/src/Semantic/SymbolTable.java" />
+        <option value="$PROJECT_DIR$/src/Semantic/par.java" />
+        <option value="$PROJECT_DIR$/src/Syntax/Analysis/Main.java" />
+        <option value="$PROJECT_DIR$/src/Semantic/functionTable.java" />
         <option value="$PROJECT_DIR$/src/Semantic/Analysis.java" />
+        <option value="$PROJECT_DIR$/SYMBOL.txt" />
         <option value="$PROJECT_DIR$/src/Semantic/attribute.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="650" />
-    <option name="y" value="15" />
-    <option name="width" value="1655" />
-    <option name="height" value="1024" />
+    <option name="x" value="577" />
+    <option name="y" value="6" />
+    <option name="width" value="1407" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,19 +229,6 @@
               <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
               <item name="Compiler" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexical" type="462c0819:PsiDirectoryNode" />
-              <item name="Tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Compiler" type="b2602c69:ProjectViewProjectNode" />
@@ -267,11 +253,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556347792480" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556468435476" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -391,10 +378,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="520" y="12" width="1324" height="819" extended-state="0" />
-    <editor active="true" />
+    <frame x="462" y="5" width="1125" height="820" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990476" weight="0.16271722" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990476" visible="true" weight="0.25585756" />
       <window_info id="Structure" order="1" sideWeight="0.50095236" side_tool="true" weight="0.1380697" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -402,16 +388,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5019685" side_tool="true" weight="0.2748815" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921012" visible="true" weight="0.26346433" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32994187" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985942" weight="0.27034885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007899" side_tool="true" weight="0.2637681" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50140584" side_tool="true" weight="0.27034885" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32756132" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32658958" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -426,15 +412,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DFA/DigitDFA.java" />
-    <entry file="file://$PROJECT_DIR$/src/DFA/WordDFA.java" />
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/517804862/FileRecv/Spilt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SortTable/operator.java" />
     <entry file="file://$PROJECT_DIR$/src/SortTable/constString.java" />
     <entry file="file://$PROJECT_DIR$/src/SortTable/Table.java" />
@@ -465,20 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Tool/Tool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,13 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Syntax/Semantic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Syntax/Semantic.java" />
     <entry file="file://$PROJECT_DIR$/SyntaxResult.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -646,32 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="417" column="21" lean-forward="true" selection-start-line="417" selection-start-column="21" selection-end-line="417" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#GenerateProduction#0;class#Main#0" />
-            <element signature="method#fillingTerminals#0;class#Main#0" />
-            <element signature="method#getFirst#0;class#Main#0" />
-            <element signature="method#CalculateClosure#0;class#Main#0" />
-            <element signature="method#CalculateClosure#1;class#Main#0" />
-            <element signature="method#SameItem#0;class#Main#0" />
-            <element signature="method#Goto#0;class#Main#0" />
-            <element signature="method#cluster#0;class#Main#0" />
-            <element signature="method#SemanticAnalysis#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="159">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
         </state>
       </provider>
     </entry>
@@ -689,46 +624,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Semantic/fourTuple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="228">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
             <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Semantic/SymbolTable.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Tool/Tool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Syntax/Analysis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="414" column="32" lean-forward="true" selection-start-line="414" selection-start-column="32" selection-end-line="414" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GenerateProduction#0;class#Main#0" />
+            <element signature="method#fillingTerminals#0;class#Main#0" />
+            <element signature="method#getFirst#0;class#Main#0" />
+            <element signature="method#CalculateClosure#0;class#Main#0" />
+            <element signature="method#CalculateClosure#1;class#Main#0" />
+            <element signature="method#SameItem#0;class#Main#0" />
+            <element signature="method#Goto#0;class#Main#0" />
+            <element signature="method#cluster#0;class#Main#0" />
+            <element signature="method#SemanticAnalysis#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Semantic/par.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexical/Tool/SymbolTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Semantic/functionTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Semantic/attribute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="354" column="72" selection-start-line="354" selection-start-column="72" selection-end-line="354" selection-end-column="72" />
+        <state relative-caret-position="335">
+          <caret line="150" column="43" lean-forward="true" selection-start-line="150" selection-start-column="43" selection-end-line="150" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYMBOL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Semantic/Analysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="143" column="36" selection-start-line="143" selection-start-column="36" selection-end-line="143" selection-end-column="36" />
+        <state relative-caret-position="287">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fourTuples.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="14" />
         </state>
       </provider>
     </entry>

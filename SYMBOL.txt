@@ -1,0 +1,17 @@
+global:
+var		type		offset
+sum		func		0
+a		int		1
+b		int		5
+c		int		9
+d		int		13
+x		int		17
+y		int		21
+z		int		25
+temp		float		29
+ta		int		33
+sum:
+var		type		offset
+a		int		0
+b		int		4
+c		float		8
